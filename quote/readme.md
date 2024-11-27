@@ -1,8 +1,9 @@
 # Demo script 
 
 ## Open directory in VSCode
-   
-	 Directory is pre poluated with 
+
+Directory is pre populated with 
+
 - `Sources/openapi.yaml` 
 - `Sources/openapi-generator-config.yaml`
 
@@ -74,3 +75,13 @@ swift package init --type executable --name QuoteService
 
 - Insert a line
 - Add snippet : `^ SPACE pkg4`
+
+## 4 changes to allow to deploy on Lambda
+
+1.
+
+2.
+
+3.
+
+4.
