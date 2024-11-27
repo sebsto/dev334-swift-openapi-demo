@@ -1,0 +1,27 @@
+{
+	"Hello World Package.swift": {
+		"scope": "swift",
+		"prefix": "pkg1",
+		"body": [
+			"platforms: [.macOS(.v15)],",
+    ],
+		"description": "Hello World demo : Package - add platform"
+	},
+
+	"Hello World code": {
+		"scope": "swift",
+		"prefix": "code",
+		"body": [	
+			"import AWSLambdaRuntime",
+			"",			
+			"let runtime = LambdaRuntime {",
+			" 		(event: String, context: LambdaContext) in",
+			"      return String(event.reversed())",
+			"}",
+			"",
+			"try await runtime.run()"
+		],
+		"description": "Hello World demo : code"
+	},
+
+}

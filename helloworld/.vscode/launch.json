@@ -1,0 +1,40 @@
+{
+	"configurations": [
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}",
+			"name": "Debug demo",
+			"program": "${workspaceFolder:demo}/.build/debug/demo",
+			"preLaunchTask": "swift: Build Debug demo"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}",
+			"name": "Release demo",
+			"program": "${workspaceFolder:demo}/.build/release/demo",
+			"preLaunchTask": "swift: Build Release demo"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}",
+			"name": "Debug QuoteService",
+			"program": "${workspaceFolder:demo}/.build/debug/QuoteService",
+			"preLaunchTask": "swift: Build Debug QuoteService"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}",
+			"name": "Release QuoteService",
+			"program": "${workspaceFolder:demo}/.build/release/QuoteService",
+			"preLaunchTask": "swift: Build Release QuoteService"
+		}
+	]
+}
