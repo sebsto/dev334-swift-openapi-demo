@@ -1,4 +1,4 @@
-# Demo script 
+# Demo script - #1 OpenAPI Service
 
 ## Open directory in VSCode
 
@@ -76,12 +76,34 @@ swift package init --type executable --name QuoteService
 - Insert a line
 - Add snippet : `^ SPACE pkg4`
 
-## 4 changes to allow to deploy on Lambda
+# Demo script - #3 Transform an OpenAPI service to Lambda
 
-1.
+1. `import OpenAPILambda`
 
-2.
+2. `@main `
 
-3.
+3. add protocol `OpenAPILambdaProtocol`
 
-4.
+4. add initializer
+   ```swift
+   init(transport: OpenAPILambdaTransport) throws { 
+       try self.registerHandlers(on: transport)
+     }
+   ```
+
+# Demo script - #4 Deploy the Lambda OpenAPI with SAM 
+
+1. Deploy 
+
+```sh
+sam deploy --guided
+```
+
+```sh 
+sam local invoke \
+  -t template.yaml \
+  -e ./apiv2.json \
+  QuoteService
+```
+
+

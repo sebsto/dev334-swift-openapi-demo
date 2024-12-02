@@ -1,0 +1,40 @@
+{
+	"configurations": [
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}/helloworld/MyLambda",
+			"name": "Debug MyLambda (helloworld/MyLambda)",
+			"program": "${workspaceFolder:demo}/helloworld/MyLambda/.build/debug/MyLambda",
+			"preLaunchTask": "swift: Build Debug MyLambda (helloworld/MyLambda)"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}/helloworld/MyLambda",
+			"name": "Release MyLambda (helloworld/MyLambda)",
+			"program": "${workspaceFolder:demo}/helloworld/MyLambda/.build/release/MyLambda",
+			"preLaunchTask": "swift: Build Release MyLambda (helloworld/MyLambda)"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}/helloworld/SwiftRestAPI",
+			"name": "Debug SwiftRestAPI (helloworld/SwiftRestAPI)",
+			"program": "${workspaceFolder:demo}/helloworld/SwiftRestAPI/.build/debug/SwiftRestAPI",
+			"preLaunchTask": "swift: Build Debug SwiftRestAPI (helloworld/SwiftRestAPI)"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}/helloworld/SwiftRestAPI",
+			"name": "Release SwiftRestAPI (helloworld/SwiftRestAPI)",
+			"program": "${workspaceFolder:demo}/helloworld/SwiftRestAPI/.build/release/SwiftRestAPI",
+			"preLaunchTask": "swift: Build Release SwiftRestAPI (helloworld/SwiftRestAPI)"
+		}
+	]
+}

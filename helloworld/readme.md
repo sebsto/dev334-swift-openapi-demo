@@ -1,6 +1,8 @@
+# Demo script - #2 HelloWorld Lambda function
+
 ```sh
 mkdir MyLambda && cd MyLambda
-swift package init --type executable
+swift package init --type executable --name MyLambda 
 swift package add-dependency https://github.com/swift-server/swift-aws-lambda-runtime.git --branch main
 swift package add-target-dependency AWSLambdaRuntime MyLambda --package swift-aws-lambda-runtime
 ```
@@ -24,7 +26,7 @@ try await runtime.run()
 
 ```sh
 swift run
-curl -v --data '"Hello Swift @ re:Invent"'  http://127.0.0.1:7000/invoke
+curl -v --data '"Swift @ re:Invent"'  http://127.0.0.1:7000/invoke
 ```
 
 ```sh
