@@ -58,6 +58,8 @@ swift package init --type executable --name QuoteService
 - Add snippet : `^ SPACE code`
 - Tour the code
 
+# Demo script - #3 Transform an OpenAPI service to Lambda
+
 ## Add OpenAPI Lambda dependencies
 
 - Open `Package.swift`
@@ -76,17 +78,19 @@ swift package init --type executable --name QuoteService
 - Insert a line
 - Add snippet : `^ SPACE pkg4`
 
-# Demo script - #3 Transform an OpenAPI service to Lambda
+## Change the code 
+
+Open `Sources/QuoteService.swift` and make these 4 changes 
 
 1. `import OpenAPILambda`
 
 2. `@main `
 
-3. add protocol `OpenAPILambdaProtocol`
+3. add protocol `OpenAPILambdaHttpApi`
 
 4. add initializer
    ```swift
-   init(transport: OpenAPILambdaTransport) throws { 
+   public init(transport: OpenAPILambdaTransport) throws { 
        try self.registerHandlers(on: transport)
      }
    ```
@@ -100,10 +104,11 @@ sam deploy --guided
 ```
 
 ```sh 
-sam local invoke \
-  -t template.yaml \
-  -e ./apiv2.json \
-  QuoteService
+curl -v ..../stocks/AMZN
+```
+
+```sh
+sam delete
 ```
 
 

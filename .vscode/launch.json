@@ -35,6 +35,24 @@
 			"name": "Release SwiftRestAPI (helloworld/SwiftRestAPI)",
 			"program": "${workspaceFolder:demo}/helloworld/SwiftRestAPI/.build/release/SwiftRestAPI",
 			"preLaunchTask": "swift: Build Release SwiftRestAPI (helloworld/SwiftRestAPI)"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}/quote",
+			"name": "Debug QuoteService (quote)",
+			"program": "${workspaceFolder:demo}/quote/.build/debug/QuoteService",
+			"preLaunchTask": "swift: Build Debug QuoteService (quote)"
+		},
+		{
+			"type": "swift-lldb",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:demo}/quote",
+			"name": "Release QuoteService (quote)",
+			"program": "${workspaceFolder:demo}/quote/.build/release/QuoteService",
+			"preLaunchTask": "swift: Build Release QuoteService (quote)"
 		}
 	]
 }

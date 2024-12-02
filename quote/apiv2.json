@@ -1,6 +1,6 @@
 {
-  "resource": "/my/path",
-  "path": "/my/path",
+  "resource": "/stocks/AMZN",
+  "path": "/stocks/AMZN",
   "httpMethod": "GET",
   "headers": {
     "header1": "value1",
