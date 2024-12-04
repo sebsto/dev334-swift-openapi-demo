@@ -95,6 +95,12 @@ Open `Sources/QuoteService.swift` and make these 4 changes
      }
    ```
 
+5. Package for distribution 
+
+   ```sh 
+   swift package archive --allow-network-connections docker
+   ```
+
 # Demo script - #4 Deploy the Lambda OpenAPI with SAM 
 
 1. Deploy 
